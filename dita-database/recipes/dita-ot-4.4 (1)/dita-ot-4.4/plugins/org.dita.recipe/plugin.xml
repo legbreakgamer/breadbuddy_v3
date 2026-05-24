@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="org.dita.recipe" version="1.0">
+    <transtype name="recipe-html" desc="BreadBuddy Recipe HTML output">
+        <param name="args.xsl" desc="Custom XSL file for recipe output" type="file">
+            <val default="true">plugins/org.dita.recipe/xsl/recipe-html.xsl</val>
+        </param>
+        <param name="args.css" desc="Custom CSS file for recipe output" type="string"/>
+    </transtype>
+    <feature extension="ant.import" file="build_recipe-html.xml"/>
+</plugin>

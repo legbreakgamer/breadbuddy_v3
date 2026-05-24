@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dita2recipe-html" default="all">
+  <import file="${dita.dir}/build.xml"/>
+  <target name="dita2recipe-html" depends="init">
+    <xslt in="${in}" out="${out}" style="${dita.plugin.org.dita.recipe.dir}/xsl/recipe-html.xsl"/>
+  </target>
+  <target name="all" depends="dita2recipe-html"/>
+</project>
